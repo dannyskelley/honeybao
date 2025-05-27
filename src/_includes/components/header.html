@@ -25,29 +25,7 @@ body,
         border-radius: 5px;
     }
 
-    #cs-navigation .cs-logo {
-            width: 49.1875rem;
-           
-           
-            max-width: 15rem;
-        
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 10;
-           
-            overflow: hidden;
-           
-        }
-
-        #cs-navigation .cs-logo img {
-            width: 100%;
-            height: 100%;
-            /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
-            object-fit: contain;
-            
-        }
+  
 
     #cs-navigation:after {
         /* on scroll overlay */
@@ -105,7 +83,7 @@ body,
             width: 100%;
             /* prevents padding and border from affecting height and width */
             box-sizing: border-box;
-            background-color: #fff;
+            background-color: var(--navBg);
             position: fixed;
             z-index: 10000;
         }
@@ -938,8 +916,8 @@ html {
 }
 
 #cs-navigation .cs-logo {
-    width: 49.1875rem;
-    max-width: 9rem;
+    width: 500px;
+    max-width: 300px;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -969,7 +947,7 @@ button {
 }
 
 body.scroll #cs-navigation .cs-logo {
-    max-width: 150px;
+    height: 100%;
 }
 
 /* Mobile - 1023px */
@@ -1009,7 +987,7 @@ body.scroll #cs-navigation .cs-logo {
         width: 100%;
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
-        background-color: #fff;
+        background-color: var(--navBg);
         position: fixed;
         z-index: 10000;
     }
@@ -1544,11 +1522,13 @@ body.scroll #cs-navigation .cs-logo {
         height: 90px;
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
-        background-color: white;
+        background-color: var(--navBg);
         position: fixed;
         z-index: 10000;
     }
-
+   body.scroll #cs-navigation {
+        height:70px;
+    }
     #cs-navigation:after {
         /* on scroll overlay */
         content: "";
@@ -1633,12 +1613,12 @@ body.scroll #cs-navigation .cs-logo {
 
     #cs-navigation .cs-li-link {
         /* 14px - 16px */
-        font-size: clamp(1.2rem, 0.6vw, 1.4rem);
+        font-size: clamp(1.1rem, 0.6vw, 1.2rem);
         line-height: 1.5em;
         text-transform: none;
         font-weight: 500;
         margin: 0;
-        color: #333;
+        color: var(--navLink);
         display: block;
         position: relative;
         transition: color 0.3s;
@@ -1666,7 +1646,7 @@ body.scroll #cs-navigation .cs-logo {
     }
 
     #cs-navigation .cs-li-link.cs-active {
-        color: black;
+        color: var(--navLinkActive);
     }
 
     #cs-navigation .cs-li-link.cs-active:before {
@@ -1827,7 +1807,7 @@ body.scroll #cs-navigation .cs-logo {
     <div class="cs-container">
         <!--Nav Logo-->
         <a href="/" class="cs-logo" aria-label="back to home">
-            <img src="/assets/images/logo.png" alt="logo" width="197"
+            <img src="/assets/images/logo.jpg" alt="logo" width="197"
                 height="43" aria-hidden="true" decoding="async">
         </a>
         <!--Navigation List-->
@@ -1853,7 +1833,7 @@ body.scroll #cs-navigation .cs-logo {
                     <li class="cs-li cs-dropdown" tabindex="0">
                         <span class="cs-li-link {{ 'cs-active' if 'services' == page.fileSlug }} cs-dropdown-toggle">
                             Services
-                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                            <img class="cs-drop-icon" style="filter: grayscale(1) brightness(1000%);" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
                         </span>
                         <ul class="cs-drop-ul">
                             <a href="/services" class="cs-li-link cs-drop-link">
@@ -1947,12 +1927,12 @@ body.scroll #cs-navigation .cs-logo {
                     <span class="mobile-link mobile-link1" style="background-color: var(--primary); color:white;">Get a Free Quote</span>
 
                     <a class="mobile-link mobile-link2" href="tel:{{client.phoneForTel}}">
-                        Call Now (586) 765-5028</a></span>
+                        Call Now {{client.phoneForTel}}</a></span>
                 </div>
             </div>
         </nav>
         <a href="/contact" class="cs-button-10 cs-button-solid cs-nav-button" aria-label="read more about us">
-            Call Now 586.765.5028
+            Call Now {{client.phoneForTel}}
      
             </a>
         <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->

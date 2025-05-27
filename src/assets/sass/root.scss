@@ -13,8 +13,9 @@
         --primaryLight:  #679CD5;
         --primary: #bc3731;
         --primaryDark: black;
-        --headerScroll: white;
-        --mobileNav: black;
+       
+        --headerScroll: #737373;
+        --mobileNav: #737373;
         --callBg: black;
         --secondary:#006dc9;
         --secondaryLight: #001f3f;
@@ -23,12 +24,12 @@
         --bodyTextColorWhite: #fafbfc;
 
 
-        --navBg:white ;
+        --navBg:#737373;
         --navLink:white ;
-        --navLinkActive:  white ;
+        --navLinkActive:  white;
 
         /* 13px - 16px */
-        --topperFontSize: clamp(1.5rem, 1.6vw, 1rem);
+        --topperFontSize: clamp(1rem, 1.1vw, 1rem);
         /* 31px - 49px */
         --headerFontSize: clamp(2.5375rem, 3.9vw, 3.0625rem);
         --bodyFontSize: 1.4rem;
@@ -138,7 +139,6 @@
         color: var(--bodyTextColor);
         scroll-behavior: smooth;
     }
-
 
 
 
