@@ -1,361 +1,248 @@
 <!-- ============================================ -->
-<!--                    Hero                      -->
+<!--                  Side By Side                -->
 <!-- ============================================ -->
 
 
 
 <style>
-
-
-
   /*-- -------------------------- -->
-<---           Hero             -->
+<---        Side By Side        -->
 <--- -------------------------- -*/
+
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #hero-1957 {
-    /* removed at Tablet */
-    min-height: 100dvh;
+  #sbs-2378 {
     padding: var(--sectionPadding);
-    /* 200px - 300px - leaving extra space for the navigation */
-    padding-top: clamp(12.5rem, 31.95vw, 18.75rem);
-    padding-right: clamp(1rem, 2.5vw, 1.25rem);
-    /* 16px - 20px */
-    padding-left: clamp(1rem, 2.5vw, 1.25rem);
-    display: flex;
-    align-items: flex-end;
+    /* 48px - 64px */
+    padding-bottom: clamp(2.5rem, 6vw, 4rem);
+      padding-top: clamp(12.5rem, 12vw, 14rem);
+    background-color: #FCFCFC;
     position: relative;
     z-index: 1;
   }
-  #hero-1957 .cs-container {
+  #sbs-2378 .cs-container {
     width: 100%;
-    max-width: 80rem;
-    margin: 0 auto;
+    /* changes to 1280px at tablet */
+    max-width: 36.5rem;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    /* 60px - 180px */
-    gap: clamp(3.75rem, 13vw, 11.25rem);
+    /* 48px - 64px */
+    gap: clamp(2.5rem, 6vw, 4rem);
   }
-  #hero-1957 .cs-content {
+  #sbs-2378 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
-    max-width: 34.625rem;
+    max-width: 39.375rem;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
-  }
-  #hero-1957 .cs-topper {
-    margin-bottom: 0.5rem;
-   
-  }
-  #hero-1957 .cs-title {
-    /* 39px - 61px */
-    font-size: clamp(2.4375rem, 5.975vw, 3.8125rem);
-    margin-bottom: 1rem;
-    color: #fff;
-  }
-  #hero-1957 .cs-text {
-    /* 16px - 20px */
-    font-size: clamp(1rem, 1.95vw, 1.25rem);
-    /* 28px - 40px */
-    margin: 0 0 clamp(1.75rem, 2.5vw, 2.5rem) 0;
-    color: #fff;
+    justify-content: center;
   }
   
-  #hero-1957 .cs-background {
+  #sbs-2378 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #sbs-2378 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  
+  #sbs-2378 .cs-picture {
     width: 100%;
-    height: 100%;
+    height: 90vw;
+    max-height: 25rem;
+    border-radius: 1rem;
+    /* clips the corners of the img tag */
+    overflow: hidden;
     display: block;
+    position: relative;
+  }
+  #sbs-2378 .cs-picture img {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -2;
-  }
-  #hero-1957 .cs-background:before {
-    /* Overlay */
-    content: "";
-    width: 100%;
     height: 100%;
-    background: linear-gradient(359deg, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0) 56.87%);
-    /* prevents the cursor from interacting with it */
-    pointer-events: none;
-    opacity: 1;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  #hero-1957 .cs-background img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
-    /* makes the top of the image start at the top of the parent */
-    object-position: top;
-    position: absolute;
-    top: 0;
-    left: 0;
   }
 }
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #hero-1957 {
-    min-height: auto;
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #sbs-2378 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
   }
-  #hero-1957 .cs-container {
-    align-items: flex-start;
+  #sbs-2378 .cs-content {
+    width: 50%;
+    max-width: 36.625rem;
+    padding-bottom: 7.6875rem;
+    /* prevents flexbox from squishing it */
+    flex: none;
+    align-self: flex-start;
   }
-  #hero-1957 .cs-content {
-    text-align: left;
-    margin-left: 0;
-    align-items: flex-start;
-  }
-  #hero-1957 .cs-background:before {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 25.47%, rgba(0, 0, 0, 0) 90.01%);
-  }
-}
-/* Large Desktop Parallax Effect - 100px */
-@media only screen and (min-width: 100rem) {
-  #hero-1957 .cs-background {
-    background: url("/assets/images/bg.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* creates the parallax effect */
-    background-attachment: fixed;
-  }
-  #hero-1957 .cs-background img {
-    display: none;
+  #sbs-2378 .cs-picture {
+    height: auto;
+    max-height: 100%;
+    order: 2;
   }
 }
+
 /*-- -------------------------- -->
-<---          Services          -->
+<---         Services           -->
 <--- -------------------------- -*/
+
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #services-1957 {
-    /* 16px - 20px */
-    padding: clamp(1rem, 2vw, 1.25rem);
-    position: relative;
-    z-index: 1;
+  #services-2378 {
+    padding: var(--sectionPadding);
+    padding-top: 300px;
+    background-color: #FBF9F5;
   }
-  #services-1957 .cs-container {
+  #services-2378 .cs-container {
     width: 100%;
-    max-width: 120rem;
+    /* chnages to 1280px at Desktop */
+    max-width: 36.5rem;
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    /* 16px - 20px */
-    gap: clamp(1rem, 2vw, 1.25rem);
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
   }
-  #services-1957 .cs-card-group {
-    width: 100%;
+  #services-2378 .cs-card-group {
     margin: 0;
     padding: 0;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    /* 16px - 20px */
-    gap: clamp(1rem, 2.5vw, 1.25rem);
+    gap: 1.25rem;
   }
-  #services-1957 .cs-item {
-    text-align: left;
-    list-style: none;
+  #services-2378 .cs-item {
     width: 100%;
-    /* 280px - 337px */
-    min-height: clamp(17.5rem, 35vw, 21.0625rem);
+    text-align: center;
+    list-style: none;
     margin: 0;
+    /* 16px - 32px */
+    padding: clamp(1rem, 3vw, 2rem);
+    border-radius: 1rem;
+    background-color: #fff;
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
-    padding: 0;
-    /* clips background image corners */
-    overflow: hidden;
-    box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
     grid-column: span 12;
     grid-row: span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     position: relative;
     z-index: 1;
   }
-  #services-1957 .cs-item:hover .cs-item-background img {
-    transform: scale(1.3);
+  #services-2378 .cs-icon {
+    /* 80px - 120px */
+    height: clamp(5rem, 9vw, 7.5rem);
+    width: auto;
+    margin-bottom: 2rem;
+    display: block;
   }
-  #services-1957 .cs-link {
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    /* 125px - 236px */
-    /* padding goes on the link, not the cs-item as is normal. We do this because we want the whole card to be hoverable. So we add the padding to the link tag to create the space inside the card. By adding the space inside the cs-link tag we can make the whole card hoverable since the padding is now contributing to the height and width of the link */
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  #services-1957 .cs-icon-wrapper {
-    width: 3rem;
-    height: 3rem;
-    margin-left: auto;
-    background: #fff;
-    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.12);
-    border-radius: 0.75rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: none;
-  }
-  #services-1957 .cs-icon {
-    width: 2rem;
-    height: auto;
-  }
-  #services-1957 .cs-flex {
-    width: 100%;
-  }
-  #services-1957 .cs-topper {
-    margin-bottom: 0.5rem;
-  
-  }
-  #services-1957 .cs-h3 {
+  #services-2378 .cs-h3 {
     /* 20px - 25px */
     font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
-    font-weight: 700;
     line-height: 1.2em;
+    font-weight: bold;
     text-align: inherit;
-    max-width: 19ch;
     margin: 0 0 0.75rem 0;
-    color: #fff;
-    transition: color 0.3s;
+    color: var(--headerColor);
   }
-  #services-1957 .cs-item-background {
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  #services-1957 .cs-item-background:before {
-    /* background color overlay */
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 57.04%, rgba(0, 0, 0, 0.5) 87.88%);
-    opacity: 1;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  #services-1957 .cs-item-background img {
-    width: 100%;
-    height: 100%;
-    /* Makes img tag act as a background image */
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 0.6s, opacity 0.3s;
+  #services-2378 .cs-item-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    max-width: 28.125rem;
+    margin: 0;
+    padding: 0;
+    color: var(--bodyTextColor);
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #services-1957 .cs-item {
+  #services-2378 .cs-item {
     grid-column: span 6;
   }
 }
-/* Large Desktop - 1300px */
-@media only screen and (min-width: 81.25rem) {
-  #services-1957 .cs-item {
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #services-2378 .cs-container {
+    max-width: 80rem;
+  }
+  #services-2378 .cs-item {
     grid-column: span 3;
   }
 }
                                 
 </style>
 
+<section id="sbs-2378">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/1.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/1.jpg">
+            <img loading="lazy" decoding="async" src="/assets/images/1.jpg" alt="people" width="586" height="690">
+        </picture>
+        <div class="cs-content">
+            
+            <h2 class="cs-title">Creative Designs for Small Businesses</h2>
 
-<!-- ============================================ -->
-<!--                   Services                   -->
-<!-- ============================================ -->
-
-<section id="services-1957">
-  <div class="cs-container">
-      <ul class="cs-card-group">
-          <li class="cs-item">
-              <a href="" class="cs-link">
-                  <picture class="cs-icon-wrapper">
-                      <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-up-right-arrow.svg" alt="icon" width="32" height="32">
-                  </picture>
-                  <div class="cs-flex">
-                      <span class="cs-topper">Dental Care</span>
-                      <h3 class="cs-h3">Caring for Your Dental Implants</h3>
-                  </div>
-              </a>
-              <picture class="cs-item-background">
-                  <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dental-care.png">
-                  <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dental-care.png">
-                  <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dental-care.png" alt="healthcare patient" width="455" height="337" aria-hidden="true">
-              </picture>
-          </li>
-          <li class="cs-item">
-              <a href="" class="cs-link">
-                  <picture class="cs-icon-wrapper">
-                      <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-up-right-arrow.svg" alt="icon" width="32" height="32">
-                  </picture>
-                  <div class="cs-flex">
-                      <span class="cs-topper">Skin Care</span>
-                      <h3 class="cs-h3">Revitalize Your Skin with Clinical Care</h3>
-                  </div>
-              </a>
-              <picture class="cs-item-background">
-                  <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/skin-care.png">
-                  <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/skin-care.png">
-                  <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/skin-care.png" alt="healthcare patient" width="455" height="337" aria-hidden="true">
-              </picture>
-          </li>
-          <li class="cs-item">
-              <a href="" class="cs-link">
-                  <picture class="cs-icon-wrapper">
-                      <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-up-right-arrow.svg" alt="icon" width="32" height="32">
-                  </picture>
-                  <div class="cs-flex">
-                      <span class="cs-topper">Cardio Care</span>
-                      <h3 class="cs-h3">Overall Checkup for Your Cardiac Health</h3>
-                  </div>
-              </a>
-              <picture class="cs-item-background">
-                  <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/cardio-care.png">
-                  <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/cardio-care.png">
-                  <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/cardio-care.png" alt="healthcare patient" width="455" height="337" aria-hidden="true">
-              </picture>
-          </li>
-          <li class="cs-item">
-              <a href="" class="cs-link">
-                  <picture class="cs-icon-wrapper">
-                      <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-up-right-arrow.svg" alt="icon" width="32" height="32">
-                  </picture>
-                  <div class="cs-flex">
-                      <span class="cs-topper">Eye Care</span>
-                      <h3 class="cs-h3">Eye Care Services for Children and Adults</h3>
-                  </div>
-              </a>
-              <picture class="cs-item-background">
-                  <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/eye-care.png">
-                  <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/eye-care.png">
-                  <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/eye-care.png" alt="healthcare patient" width="455" height="337" aria-hidden="true">
-              </picture>
-          </li>
-      </ul>
-  </div>
+            <span class="cs-topper">You need professional designs for the content you use every day</span>
+            <p class="cs-text">
+               Honey Bao creates custom graphic designs for Facebook, Instagram, Google Business Profiles, ads, email newsletters, flyers, menus, yard signs, business cards & more. All perfectly branded for your business for one flat monthly fee            </p>
+            <a href="" class="cs-button-solid">First 20 Clients $75 a month</a>
+        </div>
+    </div>
 </section>
-                              
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-2378">
+    <div class="cs-container">
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/therapy1.svg" alt="icon" width="120" height="120">
+                <h3 class="cs-h3">Licensed Expertise</h3>
+                <p class="cs-item-text">
+                    Our therapists specialize in trauma and emotional wellness.
+                </p>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/therapy2.svg" alt="icon" width="120" height="120">
+                <h3 class="cs-h3">Consistent Availability</h3>
+                <p class="cs-item-text">
+                    Our therapists specialize in trauma and emotional wellness.
+                </p>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/therapy3.svg" alt="icon" width="120" height="120">
+                <h3 class="cs-h3">Goal-Oriented Process</h3>
+                <p class="cs-item-text">
+                    Our therapists specialize in trauma and emotional wellness.
+                </p>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/therapy4.svg" alt="icon" width="120" height="120">
+                <h3 class="cs-h3">Client-First Experience</h3>
+                <p class="cs-item-text">
+                    Our therapists specialize in trauma and emotional wellness.
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+                                

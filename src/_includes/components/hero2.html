@@ -1,5 +1,5 @@
 <!-- ============================================ -->
-<!--                    Hero                      -->
+<!--                   Hero                       -->
 <!-- ============================================ -->
 
 <style>
@@ -7,406 +7,354 @@
 <---           Hero             -->
 <--- -------------------------- -*/
 
-/* Mobile - 360px */
-#hero-2219 .cs-title {max-width: 50rem;}
-
+/* Mobile */
 @media only screen and (min-width: 0rem) {
-
-
-  #hero-2219 .cs-image-group {
-    /* scales the whole group based on the view width size and stop when that vales equals .74em, resets at desktop */
-    font-size: min(2.32vw, .74em);
-    width: 39.375em;
-    height: 40.9375em;
-    display: block;
-    position: relative;
-    z-index: 9999;
-    
-  }
-
-  #hero-2219 .cs-picture {
-    position: absolute;
-  }
-  #hero-2219 .cs-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  #hero-2219 .cs-picture1 {
-    width: 19.0625em;
-    height: auto;
-    border: 4px solid #FFFFFF;
-    top: 0;
-    bottom: 17.5625em;
-    left: 30px;
-  }
-  #hero-2219 .cs-picture2 {
-    width: 25.8125em;
-    height: auto;
-    border: 4px solid #FFFFFF;
-    top: 16.9375em;
-    right: 30px;
-    bottom: 30px;
-  }
-  #hero-2219 .cs-picture3 {
-    width: 13.625em;
-    height: 9.6875em;
-    top: 5.25em;
-    right: 4.6875em;
-    border: 4px solid #FFFFFF;
-  }
-
-  #hero-2219 .cs-graphic {
-    width: 101%;
-   
-    height: auto;
-    object-fit: cover;
-    position: absolute;
-    bottom: -1px;
-    left: 50%;
-    z-index: 2;
-    transform: translateX(-50%);
-  }
-  #hero-2219 {
-    background-color: #000;
-    overflow: hidden;
-    position: relative;
-    z-index: 998;
-    padding-top:10px;
-    
-  }
-  #hero-2219 .cs-container {
-    width: 100%;
-    
-    margin: auto;
+  #hero-2349 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 7vw, 4rem);
+    gap: 3rem;
     position: relative;
-  }
-  #hero-2219 .cs-content {
-    /* top changes to 100px on tablet */
-    /* bottom 60px - 180px */
-    padding: 1.5rem 2rem clamp(3.75rem, 12vw, 11.25rem);
-    padding-top: 130px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    z-index: 99;
-  }
-  #hero-2219 .cs-author {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-  }
-  #hero-2219 .cs-name {
-    font-size: 1.5625rem;
-    font-weight: 700;
-    line-height: 1.2em;
-    color: var(--bodyTextColorWhite);
-    display: block;
-  }
-  #hero-2219 .cs-job {
-    font-size: 1rem;
-    line-height: 1.2em;
-    margin: 0 0 1rem;
-    color: var(--bodyTextColorWhite);
-    display: block;
-  }
-  #hero-2219 .cs-title {
-    /* 49px - 61px */
-    font-size: clamp(1.1625rem, 6vw, 2.9125rem);
-
-    color: var(--bodyTextColorWhite);
-  }
-  #hero-2219 .cs-text {
-    /* 16px - 20px */
-    font-size: clamp(1.2rem, 2vw, 1.25rem);
-
-    color: var(--bodyTextColorWhite);
-  }
-  #hero-2219 .cs-video-group {
-    width: 100%;
-    /* 180px - 320px */
-    height: clamp(11.25rem, 40vw, 20rem);
-    /* 48px - 80px */
-    margin-top: clamp(3rem, 11vw, 5rem);
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-  }
-  #hero-2219 .cs-video-group:hover {
-    cursor: pointer;
-  }
-  #hero-2219 .cs-video-group:hover .cs-play {
-    transform: translateY(-50%) scale(1.1);
-  }
-  #hero-2219 .cs-video-group video,
-  #hero-2219 .cs-video-group .cs-picture {
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-  #hero-2219 .cs-video-group video img,
-  #hero-2219 .cs-video-group .cs-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  #hero-2219 .cs-wrapper {
-    width: 88%;
-    position: relative;
-    z-index: 1;
-  }
-  #hero-2219 .cs-play {
-    /* 80px - 120px */
-    width: clamp(5rem, 10vw, 7.5rem);
-    height: auto;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    pointer-events: none;
-    position: absolute;
-    top: 50%;
-    left: calc(clamp(5rem, 10vw, 7.5rem)*-0.5);
-    transform: translateY(-50%);
-    transform-origin: center;
-    transition: transform 0.3s, opacity 0.3s;
-  }
-  #hero-2219 .cs-play:hover {
-    cursor: pointer;
-  }
-  #hero-2219 .cs-play.cs-hide {
-    opacity: 0;
-    transform: translateY(-50%) scale(0);
-  }
-  #hero-2219 .cs-play img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    overflow: hidden;
-  }
-  #hero-2219 .cs-background {
-    width: 100%;
-    height: 99vh;
-    min-height: 750px;
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: 1;
     background-color: black;
   }
-  #hero-2219 .cs-background img {
-    width:auto;
-  
-   min-height: 1100px;
-    object-fit: cover;
-    margin:0px 0px 0px 0px;
-    opacity: .3;
-  }
-  #hero-2219 .cs-background::before {
-    content: "";
+  #hero-2349 .cs-container {
     width: 100%;
-    height: 95vh;
-    background: linear-gradient(0deg, #000 20%, rgba(0,0, 0, 0.00) 58.94%, rgba(0, 0, 0, .05) 96.68%);
-opacity: .0;
+    max-width: 1300px;
+    margin: auto;
+    /* 392px - 560px */
+  
+    position: relative;
+    z-index: 1;
+  }
+  #hero-2349 .cs-content {
+    width: 100%;
+    max-width: 59.5rem;
+    padding: var(--sectionPadding);
+    padding-top: 0;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  #hero-2349 .cs-title {
+    /* 39px - 90px */
+    font-size: clamp(2.1375rem, 6vw, 3.925rem);
+    margin-bottom: 0;
+    max-width: 100%;
+    color: var(--bodyTextColorWhite);
+        padding-top: clamp(150px, 58vw, 300px);
+        
+  }
+  #hero-2349 .cs-text {
+    margin-bottom: 2rem;
+    max-width: 500px;
+    color: var(--bodyTextColorWhite);
+  }
+
+
+  #hero-2349 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #hero-2349 .cs-button-solid {
+    align-self: flex-start;
+  }
+  #hero-2349 .cs-stats {
+    margin: 0;
+    /* 24px - 40px top & bottom */
+    /* 16px - 60px left & right */
+    padding: clamp(1.5rem, 5vw, 2.5rem) clamp(1rem, 5vw, 3.75rem);
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 1.875rem;
+    row-gap: 4rem;
+  }
+  #hero-2349 .cs-item {
+    list-style: none;
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #hero-2349 .cs-number {
+    /* 25px - 49px */
+    font-size: clamp(1.5625rem, 5vw, 3.0625rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0;
+    color: var(--headerColor);
+  }
+  #hero-2349 .cs-color {
+    color: var(--primary);
+    display: inline-block;
+    transform: translateX(5px);
+  }
+  #hero-2349 .cs-desc {
+    /* 14px - 20px */
+    font-size: clamp(0.875rem, 2vw, 1.25rem);
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #hero-2349 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 9999;
+    object-fit: cover;
+    z-index: -2;
+  }
+  #hero-2349 .cs-background:before {
+    /* gradient Overlay */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    opacity: 1;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #hero-2349 .cs-background img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    opacity: .5;
+    top: 0;
+    left: 0;
+    object-fit: cover;
   }
 }
-
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #hero-2219 .cs-number {text-align: center;}
-
-  #hero-2219 .cs-background img {
-    width:auto;
-   height: 100vh;
-   min-height: 870px;
-    object-fit: cover;
-    margin:0px 0px 0px calc(50% - 750px);
+  #hero-2349 {
+    padding: var(--sectionPadding);
+    padding-top: 0;
+    /* 48px - 60px */
+    padding-bottom: clamp(3rem, 4vw, 3.75rem);
   }
-  #hero-2219 .cs-content {
-    text-align: left;
- 
-    padding-top: 9.25rem;
-    align-items: flex-start;
-    min-height: 500px;
-    margin: 0px;
-    padding-top: 200px;
+  #hero-2349 .cs-content {
+    width: 55%;
+    padding: 0;
   }
-
-  #hero-2219 .cs-author {
+  #hero-2349 .cs-stats {
+    width: auto;
+    background-color: rgba(255,255,255,.6);
+    column-gap: 0;
     position: absolute;
-    /* 60px - 120px */
-    bottom: clamp(3.75rem, 12vw, 7.5rem);
-    left: 7.5rem;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10;
+    border-radius: 22px;
   }
-  #hero-2219 .cs-job {
+  #hero-2349 .cs-item {
+    grid-column: span 12;
+  }
+}
+
+/* Large Desktop - 1600px */
+@media only screen and (min-width: 100rem) {
+  #hero-2349 .cs-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4.5rem;
+  }
+  #hero-2349 .cs-item {
+    grid-column: span 1;
+  }
+}
+
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0rem) {
+  #services-2349 {
+    padding: var(--sectionPadding);
+  }
+  #services-2349 .cs-card-group {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px, changes to 100px at large desktop 1300px */
+    column-gap: clamp(1rem, 3vw, 1.25rem);
+    row-gap: 2rem;
+  }
+  #services-2349 .cs-item {
+    list-style: none;
+    text-align: left;
     margin: 0;
+    padding: 0;
+    grid-column: span 12;
   }
-}
-  @media only screen and (min-width: 780px) {
-  #hero-2219 .cs-background img {
-    width:auto;
-   height: 100vh;
-   min-height: 870px;
-    object-fit: cover;
-    margin:0px 0px 0px calc(50% - 500px);
+  #services-2349 .cs-link {
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
-
-  
-
-}
-/* Large Desktop - 1300px */
-@media only screen and (min-width: 60.25rem) {
-  #hero-2219 .cs-image-group {
-position: absolute;
-right: 0px;
+  #services-2349 .cs-icon {
+    width: 1.5rem;
+    height: auto;
+    margin-bottom: 1.5rem;
     display: block;
   }
-  #hero-2219 .cs-graphic {
-    width: 100%;
-   
-    height: auto;
-    object-fit: cover;
-    position: absolute;
-    bottom: -1px;
-    left: 50%;
-    z-index: 2;
-    transform: translateX(-50%);
-  }
-  #hero-2219 .cs-content {
-  width: 49%;
-    box-sizing: content-box;
-    /* 16px - 170px */
-    margin: 0px 0px;
-    padding-top: 130px;
-    max-width: 900px;
+  #services-2349 .cs-h2 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 3vw, 2.1625rem);
+    text-align: inherit;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0 0 1rem;
+    padding-bottom: 0rem;
+    height: 100%;
+    color: var(--headerColor);
     
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
   }
-  #hero-2219 {height: 85vh;}
-  #hero-2219 .cs-background {height: 85vh; min-height: 200px; overflow: hidden;}
-  #hero-2219 .cs-background img {
-    width:100%;
-   height: 100%;
-   min-height: 930px;
-    object-fit: cover;
-    object-position: top;
-    margin:0px 0px 0px 0px;
+  #services-2349 .cs-item-text {
+    font-size: 1rem;
+    text-align: inherit;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
   }
-  #hero-2219 .cs-image-group {
-top:212px;
-right: 30px;
-
-  }
-
 }
 
-@media only screen and (min-width:1400px) {
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-2349 .cs-item {
+    grid-column: span 6;
+  }
+}
 
- #hero-2219 .cs-graphic {
-   width: 100%;
-  
-   height: auto;
-   object-fit: cover;
-   position: absolute;
-   bottom: -1px;
-   left: 50%;
-   z-index: 2;
-   transform: translateX(-50%);
- }
- #hero-2219 .cs-content {
- width: 80%;
-   box-sizing: content-box;
-   /* 16px - 170px */
-   margin: 0px auto;
-   padding-top: 150px;
-   max-width: 1200px;
-   
- }
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #services-2349 .cs-item {
+    grid-column: span 4;
+  }
+}
+
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #services-2349 .cs-card-group {
+    column-gap: 6.25rem;
+  }
 }
                                 
 </style>
 
-<section id="hero-2219">
-
-  <div class="cs-container">
+<section id="hero-2349">
+    <div class="cs-container">
       <div class="cs-content">
-       
-
-
-      <span class="cs-topper" data-aos="fade-up" style="color: var(--primary); text-transform: uppercase;"> Vazquez Iron Works</span>
-       
-          <h1 class="cs-title" >Chicago’s Trusted Experts in Welding, Fences, Gates & Custom Ironwork</h1>
+    <h2 class="cs-title">We create beautiful designs for busy businesses</h2>
     
-          <p class="cs-text">
-           
-            
-            Vazquez Iron Works provides the best welding services in the Chicago area. Including custom fabrication, fences, railings, gates, stairs, pergolas, canopies, and more.
-
-            </p>
-          <a style="margin-top: 30px;" href="tel:{{client.phoneForTel}}" class="cs-button-solid">Free Quote {{client.phoneForTel}}</a>
-           
-
-      
-      </div>
-      
-     
-      <picture class="cs-background">
-        
-          <!--Mobile Image-->
-          <source media="(max-width: 600px)" srcset="/assets/images/bgb.jpg">
-          <!--Tablet and above Image-->
-          <source media="(min-width: 601px)" srcset="/assets/images/bgb.jpg">
-          <img decoding="async" src="/assets/images/bgb.jpg" alt="photographer" width="1280" height="568">
-      </picture>
-      
-  </div>
-  <div class="cs-image-group">
-    <!--Top left image-->
-    <picture class="cs-picture cs-picture1">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/images/bg3.jpg">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/assets/images/bg3.jpg">
-        <img decoding="async" src="/assets/images/bg3.jpg" alt="wedding photoshoot" width="297" height="366">
-    </picture>
-    <!--Bottom right image-->
-    <picture class="cs-picture cs-picture2" >
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/images/bg2.jpg">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/assets/images/bg2.jpg">
-        <img  decoding="async" src="/assets/images/bg2.jpg" alt="photograph of a woman" width="405" height="376">
-    </picture>
-    <!--Middle image-->
-    <picture class="cs-picture cs-picture3" >
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/images/bg.jpg">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/assets/images/bg.jpg">
-        <img decoding="async" src="/assets/images/bg.jpg" alt="children's birthday" width="218" height="155">
-    </picture>
+    <p class="cs-text">
+   At Honey Bao, we partner with small businesses to deliver custom, professional graphic design for the content you use every day. From social media posts and email newsletters to flyers, menus, yard signs, and more.    </p>
+    <a href="" class="cs-button-solid">First 20 Clients $75 a month</a>
 </div>
 
-
-<svg class="cs-graphic" width="1920" height="163" viewBox="0 0 1920 163" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M703 163H0V63L703 163Z" fill="#737373"/>
-  <path d="M583 163H1921V0L583 163Z" fill="#737373"/>
-  <path d="M694 163H1920V21L694 163Z" fill="#fff"/>
-  <path d="M593 163H0V79L593 163Z" fill="#fff"/>
-  </svg>
+    </div>
+    <ul class="cs-stats">
+        <li class="cs-item">
+            <span class="cs-number">
+                <span class="cs-color">+</span>
+               10
+            </span>
+            <span class="cs-desc">Available Spots</span>
+        </li>
+        <li class="cs-item">
+            <span class="cs-number">
+                <span class="cs-color">$</span>
+                75
+            </span>
+            <span class="cs-desc">A Month</span>
+        </li>
+        <li class="cs-item">
+            <span class="cs-number">
+                <span class="cs-color">+</span>
+                0
+            </span>
+            <span class="cs-desc">Extra Cost for Logo Design</span>
+        </li>
+    </ul>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/1.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/1.jpg">
+        <img decoding="async" src="/assets/images/1.jpg" alt="fancy modern architecture" width="1800" height="860">
+    </picture>
 </section>
+           
+<!-- ============================================ -->
+<!--                 Services                     -->
+<!-- ============================================ -->
+                                
+<section id="services-2349">
+  <DIV style="margin: auto; max-width: 900px;">
+    <h3 class="cs-topper" style="max-width: 1300px;">
+   You’re constantly creating flyers, social posts, menus, & more.
+  </h3>
+  <h3 class="cs-title" style="max-width: 1300px; margin-bottom: 100px;">
+     But professional design is hard to maintain when you’re running the whole business.
+  </h3>
+  </DIV>
+    <ul class="cs-card-group">
+        <li class="cs-item">
+            <a href="" class="cs-link">
+               <span class="cs-title">😓</span>                <h2 class="cs-h2"> You’re not a designer</h2>
+                <p class="cs-item-text">
+                     (and you shouldn’t have to be)
+                </p>
+            </a>
+        </li>
+        <li class="cs-item">
+            <a href="" class="cs-link">
+               
+               <span class="cs-title">🤢</span>   
 
+                <h2 class="cs-h2">Your business looks inconsistent</h2>
+                <p class="cs-item-text">
+                    Confusing customers and killing trust
+                </p>
+            </a>
+        </li>
+        <li class="cs-item">
+            <a href="" class="cs-link">
+                
+ <span class="cs-title">😲</span>   
+              <h2 class="cs-h2"> You’re stuck Googling </h2>
+                <p class="cs-item-text">
+                  “How to make a menu in Canva” at 10pm
+                  </p>
+            
+            </a>
+        </li>
 
+    </ul>
 
-<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+    <DIV style="text-align: center; margin-top: 80px;">
+      
+
+   
+{% include 'components/cta_button.html' %}
+
+    </DIV>
+</section>

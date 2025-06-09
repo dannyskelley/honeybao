@@ -10,12 +10,12 @@
 @media only screen and (min-width: 0em) {
   :root {
     --primaryLight: #679CD5;
-    --primary: #bc3731;
+    --primary: #d95d39;
     --primaryDark: black;
     --headerScroll: #737373;
     --mobileNav: #737373;
     --callBg: black;
-    --secondary:#006dc9;
+    --secondary:#FF914D;
     --secondaryLight: #001f3f;
     --headerColor: #1a1a1a;
     --bodyTextColor: rgba(0,0,0,.8);
@@ -24,9 +24,9 @@
     --navLink:white ;
     --navLinkActive: white;
     /* 13px - 16px */
-    --topperFontSize: clamp(1rem, 1.1vw, 1rem);
+    --topperFontSize: clamp(1rem, 2.1vw, 3.1rem);
     /* 31px - 49px */
-    --headerFontSize: clamp(2.5375rem, 3.9vw, 3.0625rem);
+    --headerFontSize: clamp(2.5375rem, 3.9vw, 3.2625rem);
     --bodyFontSize: 1.4rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(8.75rem, 7.82vw, 6.25rem) 2rem;
@@ -38,7 +38,7 @@
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     font-weight: 700;
-    color: var(--secondary);
+    color: var(--primary);
     text-align: inherit;
   }
   .cs-title {
@@ -65,22 +65,21 @@
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   }
   .cs-button-solid {
-    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     position: relative;
     text-transform: none;
     display: inline-block;
     background-color: var(--primary);
+    border-radius: 999px;
     width: auto;
-    border: 1px solid white;
+    border: 0px solid var(--primary);
     padding: 20px 30px;
     text-decoration: none;
-    border-radius: 9px;
     font-family: "Poppins";
     font-size: 1rem;
     line-height: 22px;
     font-weight: bold;
-    color: white;
+    color: black;
     text-align: center;
   }
   .cs-button-solid:hover {
@@ -102,7 +101,6 @@
     height: 100%;
     border: 2px solid black;
     opacity: 0;
-    border-radius: 999px;
     width: 0;
     transition: width 0.1s;
   }
@@ -648,7 +646,7 @@
     content: "";
     opacity: 1;
     display: block;
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--primary);
     height: 5px;
     width: 0%;
     transition: width 0.3s;
