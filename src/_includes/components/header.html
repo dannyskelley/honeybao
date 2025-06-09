@@ -715,7 +715,7 @@
     <div class="cs-container">
         <!--Nav Logo-->
         <!--Logo is turned white in the css with a filter on dark mode-->
-        <a href="" class="cs-logo" aria-label="back to home">
+        <a href="/" class="cs-logo" aria-label="back to home">
             <img src="/assets/images/logo.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
         </a>
         <!--Navigation List-->
@@ -732,16 +732,12 @@
             <div class="cs-ul-wrapper">
                 <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
                     <li class="cs-li">
-                        <a href="" class="cs-li-link cs-active">
+                        <a href="/" class="cs-li-link {{ 'cs-active' if '/' == page.url }}">
                             Home
                         </a>
                     </li>
-                    <li class="cs-li">
-                        <a href="" class="cs-li-link">
-                            About
-                        </a>
-                    </li>
-                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+            
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work
                     <li class="cs-li cs-dropdown" tabindex="0">
                         <span class="cs-li-link">
                             Services
@@ -756,18 +752,14 @@
                             </li>
                         </ul>
                     </li>
-                                    <li class="cs-li">
-                        <a href="" class="cs-li-link">
-                           Pricing
-                        </a>
-                    </li>
+                    -->
                     <li class="cs-li">
-                        <a href="" class="cs-li-link">
+                        <a href="/blog"  class="cs-li-link {{ 'cs-active' if '/blog/'== page.url }}">
                             Blog
                         </a>
                     </li>
                     <li class="cs-li">
-                        <a href="" class="cs-li-link">
+                        <a href="/contact" class="cs-li-link {{ 'cs-active' if '/contact/'== page.url }}">
                             Contact
                         </a>
                     </li>
