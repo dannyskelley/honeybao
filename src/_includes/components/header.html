@@ -10,6 +10,14 @@
 
 /* Mobile - 1023px */
 @media only screen and (max-width: 63.9375rem) {
+
+    body.scroll #cs-navigation {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    top: 0;
+     background-color: white;
+  }
   body {
     position: relative;
     z-index: 1;
@@ -49,13 +57,13 @@
     width: 94%;
     max-width: 80rem;
     /* 12px - 24px */
-    padding: clamp(0.75rem, 2vw, 1.5rem);
+    padding: 10px;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     /* 12px - 24px */
     border-radius: clamp(0.75rem, 2vw, 1.5rem);
     position: fixed;
-    top: 2rem;
+    top: 10px;
     left: 50%;
     z-index: 10000;
     transform: translateX(-50%);
@@ -66,7 +74,7 @@
     content: '';
     width: 100%;
     height: 100%;
-    background: #fff;
+
     /* 12px - 24px */
     border-radius: clamp(0.75rem, 2vw, 1.5rem);
     

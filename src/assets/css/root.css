@@ -468,8 +468,6 @@
     height: 100vh;
     width: 0%;
     transition: width 0.5s, opacity 0.3s;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
   }
   #cs-navigation.cs-active .cs-ul-wrapper {
     opacity: 1;
