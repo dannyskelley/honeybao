@@ -1,26 +1,28 @@
 <!-- ============================================ -->
-<!--              Side By Side Reverse            -->
+<!--                 Side By Side                 -->
 <!-- ============================================ -->
+
+
 <style>
-    /*-- -------------------------- -->
-<---   Side By Side Reverse     -->
+  /*-- -------------------------- -->
+<---        Side By Side        -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #sbsr-2217 {
+  #sbs-2369 {
     padding: var(--sectionPadding);
-  
-    background: #FFFFFF;
-    background: radial-gradient(at center bottom, #FFFFFF, #badbff);
+    padding-bottom: 0;
+    background-color: #FBF5F1;
+    /* clips anything overflowing */
     overflow: hidden;
     position: relative;
     z-index: 1;
   }
-  #sbsr-2217 .cs-container {
+  #sbs-2369 .cs-container {
     width: 100%;
     /* changes to 1280px at desktop */
-    max-width: 36.5rem;
+    max-width: 49rem;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -28,206 +30,255 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #sbsr-2217 .cs-content {
-    /* set text align to left if content needs to be left aligned */
+  #sbs-2369 .cs-wrapper {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #sbs-2369 .cs-content {
+    /* set text align to center if content needs to be centered */
     text-align: left;
     width: 100%;
-    max-width: 36.625rem;
+    max-width: 43.375rem;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
+    /* left aligns content, set to center to align content horizontally */
     align-items: flex-start;
   }
-  #sbsr-2217 .cs-text {
-    margin-bottom: 1.5rem;
-  }
-  #sbsr-2217 .cs-list {
-    margin: 0 0 2rem 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    /* 24px - 32px */
-    gap: clamp(1.5rem, 3vw, 2rem);
-  }
-  #sbsr-2217 .cs-li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 1.5rem;
-  }
-  #sbsr-2217 .cs-icon-wrapper {
-    /* 60px - 80px */
-    width: clamp(3.75rem, 7vw, 5rem);
-    height: clamp(3.75rem, 7vw, 5rem);
-    border: 1px solid #bababa;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: none;
-  }
-  #sbsr-2217 .cs-icon {
-    width: 2rem;
-    height: auto;
-    display: block;
-  }
-  #sbsr-2217 .cs-h3 {
-    /* 20px - 25px */
-    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
-    font-weight: 700;
+  #sbs-2369 .cs-header {
+    /* 20px - 31px */
+    font-size: clamp(1.25rem, 3vw, 1.9375rem);
+    text-align: center;
     line-height: 1.2em;
-    text-align: left;
-    margin: 0 0 0.75rem 0;
+    font-weight: 700;
+    margin: 0 0 2rem 0;
     color: var(--headerColor);
   }
-  #sbsr-2217 .cs-li-text {
-    /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.8vw, 1rem);
-    line-height: 1.5em;
-    text-align: left;
-    margin: 0;
-    color: var(--bodyTextColor);
-  }
-  #sbsr-2217 .cs-image-group {
-    /* scales the whole group based on the view width size and stop when that vales equals .74em, resets at desktop */
-    font-size: min(2.32vw, .74em);
-    width: 39.375em;
-    height: 40.9375em;
+  #sbs-2369 .cs-arrow {
+    width: 9.625rem;
+    height: auto;
+    margin-bottom: 1.25rem;
     display: block;
+  }
+  #sbs-2369 .cs-topper {
+    text-align: center;
+    margin: auto;
+  }
+  #sbs-2369 .cs-title {
+    text-align: center;
+    max-width: 20ch;
+    margin: auto;
+    margin-bottom: 30px;
+    /* 48px - 64px */
+
     position: relative;
     z-index: 1;
   }
-  #sbsr-2217 .cs-image-group::before {
-    content: "";
-    width: 22.375em;
-    height: auto;
-    background: var(--secondary);
-    opacity: 0.2;
-    display: block;
-    position: absolute;
-    top: 9em;
-    bottom: 11.125em;
-    left: 5.5em;
+
+  #sbs-2369 .cs-text {
+    margin-bottom: 1rem;
   }
-  #sbsr-2217 .cs-picture {
-    position: absolute;
+  #sbs-2369 .cs-text:last-of-type {
+    /* 24px - 32px */
+    margin-bottom: clamp(1.5rem, 3vw, 2rem);
   }
-  #sbsr-2217 .cs-picture img {
+  #sbs-2369 .cs-ul {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin: 0 0 2rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
   }
-  #sbsr-2217 .cs-picture1 {
-    width: 19.0625em;
+  #sbs-2369 .cs-li {
+    font-size: var(--bodyFontSize);
+    list-style: none;
+    line-height: 1.5em;
+    width: 100%;
+    color: var(--bodyTextColor);
+    display: flex;
+    justify-content: flex-start;
+    /* push icon top the top so if the list item goes to two lines the icon stays at the top */
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  #sbs-2369 .cs-icon {
+    width: 1.1875rem;
     height: auto;
-    border: 4px solid #FFFFFF;
-    top: 0;
-    bottom: 17.5625em;
-    left: 0;
-  }
-  #sbsr-2217 .cs-picture2 {
-    width: 25.8125em;
-    height: auto;
-    border: 4px solid #FFFFFF;
-    top: 16.9375em;
-    right: 0;
-    bottom: 0;
-  }
-  #sbsr-2217 .cs-picture3 {
-    width: 13.625em;
-    height: 9.6875em;
-    top: 5.25em;
-    right: 4.6875em;
-  }
-  #sbsr-2217 .cs-graphic {
-    /* 131px - 255px */
-    width: clamp(5.8175rem, 15vw, 15.9375rem);
-    height: auto;
+    /* adds extra space between the icon and top of parent so it's more centered */
+    margin-top: 3px;
     display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
+    flex: none;
   }
  
+  #sbs-2369 .cs-image-group {
+    /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
+    font-size: min(2.8vw, .75rem);
+    /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
+    width: 32.625em;
+    height: auto;
+    order: 2;
+    position: relative;
+    z-index: 1;
+  }
+  #sbs-2369 .cs-picture {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  #sbs-2369 .cs-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  #sbs-2369 .cs-flower {
+    width: 75em;
+    height: auto;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+  }
 }
-/* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-
-    
-  #sbsr-2217 .cs-container {
+/* Large Desktop - 1200px */
+@media only screen and (min-width: 75rem) {
+  #sbs-2369 {
+    padding: var(--sectionPadding);
+    padding-bottom: 0;
+  }
+  #sbs-2369 .cs-container {
     max-width: 80rem;
     flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-  }
-  #sbsr-2217 .cs-content {
-    width: 47%;
-    align-self: center;
-  }
-  #sbsr-2217 .cs-li {
+    justify-content: flex-end;
     align-items: center;
+    position: relative;
+    z-index: 1;
   }
-  #sbsr-2217 .cs-image-group {
-    font-size: min(1.2vw, 1em);
+  #sbs-2369 .cs-content {
+    width: 50%;
+    padding-bottom: clamp(3.75rem, 7.82vw, 6.25rem);
+    align-items: flex-start;
+  }
+  #sbs-2369 .cs-topper,
+  #sbs-2369 .cs-title {
+    text-align: left;
+    margin: 0;
+  }
+  #sbs-2369 .cs-topper {
+    margin-bottom: 0.25rem;
+  }
+
+  #sbs-2369 .cs-image-group {
+    /* set to inherit at Large Desktop */
+    font-size: min(1.2vw, 1rem);
     height: auto;
-    flex: none;
-    order: 2;
+    order: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+  #sbs-2369 .cs-picture {
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    z-index: 1;
+  }
+  #sbs-2369 .cs-picture img {
+    height: 100%;
+    width: auto;
+  }
+  #sbs-2369 .cs-flower {
+    width: 80vw;
+    max-width: 56.25rem;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #sbs-2369 {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  body.dark-mode #sbs-2369 .cs-title,
+  body.dark-mode #sbs-2369 .cs-text,
+  body.dark-mode #sbs-2369 .cs-header,
+  body.dark-mode #sbs-2369 .cs-li {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #sbs-2369 .cs-title:before {
+    opacity: 0.2;
+  }
+  body.dark-mode #sbs-2369 .cs-text,
+  body.dark-mode #sbs-2369 .cs-li {
+    opacity: 0.8;
+  }
+  body.dark-mode #sbs-2369 .cs-wheel {
+    filter: grayscale(1) brightness(1000%) opacity(0.3);
   }
 }
                                 
 </style>
-<section id="sbsr-2217">
+
+<section id="sbs-2369">
+    <div class="cs-wrapper">
+        <p class="cs-header">
+           You deserve a trusted design partner who just gets it & gets it done.        </p>
+        <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/curve-arrow.svg" alt="arrow graphic" width="154" height="120">
+    </div>
     <div class="cs-container">
         <div class="cs-image-group">
-            <!--Top left image-->
-            <picture class="cs-picture cs-picture1">
+            <!--Main Image-->
+            <picture class="cs-picture">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/2.jpg">
+                <source media="(max-width: 600px)" srcset="/assets/images/2.png">
                 <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/2.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/2.jpg" alt="wedding photoshoot" width="297" height="366">
+                <source media="(min-width: 601px)" srcset="/assets/images/2.png">
+                <img loading="lazy" decoding="async" src="/assets/images/2.png" alt="therapist" width="565" height="814">
             </picture>
-            <!--Bottom right image-->
-            <picture class="cs-picture cs-picture2">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/4.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/4.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/4.jpg" alt="photograph of a woman" width="405" height="376">
-            </picture>
-            <!--Middle image-->
-            <picture class="cs-picture cs-picture3">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/5.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/5.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/5.jpg" alt="children's birthday" width="218" height="155">
-            </picture>
+            <img class="cs-flower" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/flower-blur.svg" alt="flower blur" width="635" height="697">
         </div>
         <div class="cs-content">
-          <span class="cs-topper">Chesaning Inn & Suites</span>
-            <h2 class="cs-title"> Cozy Comfort in the Heart of Chesaning, MI</h2>
+            <span class="cs-topper">Honey Bao</span>
+            <h2 class="cs-title">Your small business design sidekick</h2>
             <p class="cs-text">
-             
-             
+           At Honey Bao, we specialize in delivering beautiful, on brand graphics every month. So you can stop stressing about design and focus on running your business.
+ We have over a decade of experience helping businesses like yours level up their presence with reliable, professional, and affordable creative support.            </p>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/swirl.svg" alt="checkmark" width="24" height="24">
+                   Logo Design & Branding
+                </li>
+                                 <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/swirl.svg" alt="checkmark" width="24" height="24">
+                    Newsletter, Menu, Flyer & Signage Graphics
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/swirl.svg" alt="checkmark" width="24" height="24">
+                    Instagram & Facebook & Google Graphics & Posts
+                </li>
+ 
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/swirl.svg" alt="checkmark" width="24" height="24">
+                    On brand Business photography & for your office, staff & products
+                </li>
+            </ul>
+                <DIV style="text-align: center; margin-top: 0px;">
+      
 
-              Chesaning Inn & Suites offers that classic, small town charm with the comfort and ease of a modern stay. Each of our rooms has its own character. Located in the friendly village of Chesaning, our hotel is just minutes from local shops, events, and outdoor attractions. Our front desk team knows the area inside and out and is happy to help you plan your visit. Pull right up to your room, settle in, and enjoy a stay that feels just like home.
-              
-              
+   
+{% include 'components/cta_button.html' %}
 
-                    <div style="margin-top: 30px;">
-                    
-                      {% include 'components/cta_button.html' %}
-                  </div>
-                      
+    </DIV>
         </div>
     </div>
-  </section>
+</section>
                                 

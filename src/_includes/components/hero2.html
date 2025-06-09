@@ -22,7 +22,7 @@
     max-width: 1300px;
     margin: auto;
     /* 392px - 560px */
-  
+   padding-top: clamp(150px, 58vw, 220px);
     position: relative;
     z-index: 1;
   }
@@ -43,7 +43,7 @@
     margin-bottom: 0;
     max-width: 100%;
     color: var(--bodyTextColorWhite);
-        padding-top: clamp(150px, 58vw, 300px);
+        padding-top: clamp(50px, 58vw, 100px);
         
   }
   #hero-2349 .cs-text {
@@ -148,7 +148,8 @@
   }
   #hero-2349 .cs-stats {
     width: auto;
-    background-color: rgba(255,255,255,.6);
+    background-color: rgba(255,255,255,.5);
+    backdrop-filter: blur(10px);
     column-gap: 0;
     position: absolute;
     bottom: 10px;
