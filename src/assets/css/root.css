@@ -17,16 +17,16 @@
     --callBg: black;
     --secondary:#FF914D;
     --secondaryLight: #001f3f;
-    --headerColor: #1a1a1a;
-    --bodyTextColor: rgba(0,0,0,.8);
+    --headerColor: rgba(0,0,0,.9) ;
+    --bodyTextColor: rgba(0,0,0,.7);
     --bodyTextColorWhite: #fafbfc;
     --navBg:#737373;
     --navLink:white ;
     --navLinkActive: white;
     /* 13px - 16px */
-    --topperFontSize: clamp(1rem, 2.1vw, 3.1rem);
+    --topperFontSize: clamp(1.8rem, 2.1vw, 2.1rem);
     /* 31px - 49px */
-    --headerFontSize: clamp(2.5375rem, 3.9vw, 3.2625rem);
+    --headerFontSize: clamp(2.0375rem, 3.9vw, 3.2625rem);
     --bodyFontSize: clamp(1.1375rem, 3.9vw, 1.4625rem);
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(8.75rem, 7.82vw, 6.25rem) 2rem;
