@@ -330,48 +330,14 @@ order: 500
         margin-bottom: 0.75rem;
         font-family: inherit;
     }
-    #contact-1403 .cs-button-solid {
-        font-size: 1rem;
-        line-height: 3.5rem;
-        text-decoration: none;
-        font-weight: 700;
-        overflow: hidden;
-        margin: 0;
-        color: #fff;
-        padding: 0 3rem;
-        border-radius: 1.875rem;
-        background-color: var(--primary);
-        display: inline-block;
-        position: relative;
-        z-index: 1;
-        transition: color 0.3s;
-    }
-    #contact-1403 .cs-button-solid:before {
-        content: "";
-        position: absolute;
-        display: block;
-        height: 100%;
-        width: 0%;
-        background: #1a1a1a;
-        opacity: 1;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: width 0.3s;
-    }
-    #contact-1403 .cs-button-solid:hover {
-        color: var(--primary);
-    }
-    #contact-1403 .cs-button-solid:hover:before {
-        width: 100%;
-    }
+   
     #contact-1403 .cs-submit {
         width: 100%;
         min-width: 12.5rem;
         border: none;
     }
     #contact-1403 .cs-submit:hover {
-        color: #fff;
+      
         cursor: pointer;
     }
 }
@@ -631,18 +597,18 @@ order: 500
 <section id="contact-1403">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">Contact Us</span>
-            <h2 class="cs-title">Get in Touch</h2>
+            <span class="cs-topper">Get started today</span>
+            <h2 class="cs-title">Let Us Bring Your Vision to Life</h2>
             <p class="cs-text">
-                We are a team of passionate and creative individuals dedicated to crafting captivating designs that leave a lasting impression.
+               At Honey Bao Creative, we help small businesses and bold brands stand out with style. Whether you're just starting out or scaling up, we're here to craft visuals and content that get noticed.
             </p>
-            <ul class="cs-ul">
+            <ul class="cs-ul" style="margin-bottom: 150px;">
                 <li class="cs-li">
                     <picture class="cs-icon-wrapper">
                         <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-76.svg" alt="phone icon" class="cs-icon" width="40" height="40" decoding="async">
                     </picture>
                     <div class="cs-flex-group">
-                        <span class="cs-header">Phone</span>
+                        <span class="cs-header">Let's Talk</span>
                         <a href="tel:888-4565-789
                         " class="cs-link">{{client.phoneForTel}}
                         </a>
@@ -669,7 +635,12 @@ order: 500
             </ul>
         </div>
         <!--Form-->
-        <form class="cs-form" id="cs-form-1403" name="Contact Form" method="post">
+      <form netlify netlify-honeypot="bot-field" class="cs-form" id="cs-form-1403" name="Contact Form" method="post">
+            <p style="display: none;">
+                <label>
+                  Don’t fill this out if you’re human: <input name="bot-field" />
+                </label>
+              </p>
             <h3 class="cs-h3">Send us a message</h3>
             <label class="cs-label">
                 Name
@@ -698,8 +669,7 @@ order: 500
 
 <section id="map-1403">
     <!--Replace this embed code with the google maps embed code of your clients location. To do so, google your clients business, click on the map picture that in the profile card to go to the map location. That will take you to Google maps, then find the share button in the left panel and click on it. You will be given a link to share and a button to copy link, ignore that! AAbove that is a tab that says "Embed a map", click that instead and it will bring up the embed code for you clients location in maps.  Click the button to copy the html and paste it in place of this entire iframe tag. Do not keep the original iframe. Replace it with the new one you got from google maps, unless you want to display a map of Wyoming, then you can keep this iframe. -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5987792.625430153!2d-112.83740872163986!3d42.87860877503384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875ee23448e12e69%3A0x26b02279d27d382f!2sWyoming!5e0!3m2!1sen!2sus!4v1695423897283!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455550.92944344494!2d-83.42875728982773!3d42.352122884693976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824ca0110cb1d75%3A0x5776864e35b9c4d2!2sDetroit%2C%20MI!5e1!3m2!1sen!2sus!4v1749756786176!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></section>
 
 <!-- ============================================ -->
 <!--                   Reviews                    -->
@@ -709,44 +679,45 @@ order: 500
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Testimonials</span>
-            <h2 class="cs-title">Happy Client’s Feedback About Our Service</h2>
+            <h2 class="cs-title">Happy Client’s Feedback About Our Services</h2>
         </div>
         <ul class="cs-card-group">
             <li class="cs-item">
-                <!--Blue Quote-->
+                <!--Pink Quote-->
                 <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pink-quotes.svg" decoding="async" alt="quote icon" width="120" height="99">
                 <p class="cs-item-text">
-                    Small businesses are the heartbeat of communities, embodying the spirit of entrepreneurship, determination, and local support. 
+                    Honey Bao completely transformed our socials. The posts finally match our brand and actually get attention. Fast, fresh, and totally on point.
                 </p>
                 <div class="cs-flex-group">
                     <picture class="cs-picture">
                         <img class="cs-profile" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile2.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
                     </picture>
                     <span class="cs-name">
-                        Britney Allison
-                        <span class="cs-job">Founder Of Yokoloko</span>
+                        Susie Sharak
+                        <span class="cs-job">susiesharak.com</span>
                     </span>
                 </div>
             </li>
             <li class="cs-item">
-                <!--Blue Quote-->
+                <!--Pink Quote-->
                 <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pink-quotes.svg" decoding="async" alt="quote icon" width="120" height="99">
                 <p class="cs-item-text">
-                    I want to say a huge thank you to the Stitch team. The guys in a short time and very efficiently helped me with the development of a website for my new startup.
+                    Our Instagram was all over the place. Honey Bao gave it direction and style. They made it easy to stay consistent and got us way more engagement.
                 </p>
                 <div class="cs-flex-group">
                     <picture class="cs-picture">
                         <img class="cs-profile" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile3.png" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
                     </picture>
                     <span class="cs-name">
-                        Jessica Jonson
-                        <span class="cs-job">CTO Of Meriette</span>
+                        Danny Skelley
+                        <span class="cs-job">designgandalf.com</span>
                     </span>
                 </div>
             </li>
         </ul>
     </div>
 </section>
+
                                 
 
 {% endblock %}
