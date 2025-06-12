@@ -1,11 +1,11 @@
 {
     "name": "Honey Bao",
-    "service": "Roofing",
-    "email": "info@designgandalf.com",
-    "phoneForTel": "(815) 919-2704",
-    "phoneFormatted": "(815) 919-2704",
+    "service": "Creative Services",
+    "email": "Honeybaocreative@gmail.com",
+    "phoneForTel": "(313) 788-3644",
+    "phoneFormatted": "(313) 788-3644",
     "serviceAreas": {
-        "areaOne": "Daytona, FL",
+        "areaOne": "Detroit, MI",
         "areaTwo": "Port Orange, FL"
     },
     "address": {

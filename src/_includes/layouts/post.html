@@ -1,60 +1,75 @@
----
-preloadCSS: '/assets/css/blog.css'
-eleventyComputed:
-    title: '{{ title }}'
-    description: '{{ description }}'
-    preloadImg: '{{ image }}'
-    permalink: '/blog/{{ title | slug }}/index.html'
----
-
 {% extends "layouts/base.html" %}
-
-<style>
-    body {background-color: white;}
-</style>
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/blog.css">
 {% endblock %}
 
 {% block body %}
+  
 
 
-{% include 'components/header_blog.html' %}
+<picture class="blog-mainImage">
+    <img style="max-width: 100%;" src="{{ image }}" alt="{{ imageAlt }}" decoding="async"/>
+</picture>
 
 
     <!-- ============================================ -->
     <!--              Main Blog Content               -->
     <!-- ============================================ -->
 
+
+  
+
+
     <div class="blog-container main-content-wrapper">
+       
         <!--Main content -->
         <div class="main-content">
+            <h1 class="container blog-h1">{{ title }}</h1>
+
             <!-- ============================================ -->
             <!--                  Blog Article                -->
             <!-- ============================================ -->
 
-            <article class="blog-article" >
-         
-                <!--Article Info-->
-                <div class="article-group" >
-                    <h1 class="cs-title">{{ title }}</h1>
-                           <!--Main Article Image-->
-        
+          
 
-                   
-                </div>
+
+   
+
+
+            <article class="blog-article">
+                <!--Main Article Image-->
+           
+
+
                 <section id="blog-content">
                     {{ content | safe }}
                 </section>
+
+
+                                <!--Article Info-->
+                                <div class="article-group">
+                    
+                                    <div class="blog-authorGroup">
+                                        <!--Author Image-->
+                                        <picture class="blog-author-img">
+                                            <img
+                                            src="/assets/svgs/profile.svg"
+                                            alt="house"
+                                            width="32"
+                                            height="32"
+                                            decoding="async">
+                                        </picture>
+                                        <span class="blog-author">{{ author }}</span>
+                                        <span aria-hidden="true" class="blog-dot"></span>
+                                        <!--Blog Date-->
+                                        <span class="blog-date">{{ date | postDate }}</span>
+                                    </div>
+                                </div>
             </article>
         </div>
         <!-- End .main-content -->
 
-
+        
     </div>
-
-    {% include 'components/cta.html' %}
-    
 {% endblock %}
-

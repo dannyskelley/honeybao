@@ -36,6 +36,7 @@ order: 500
         overflow: hidden;
         position: relative;
         z-index: 1;
+        background-color: black
     }
     #banner-1403 .cs-container {
         text-align: center;
@@ -111,7 +112,7 @@ order: 500
         width: 100%;
         height: 100%;
         background: #000;
-        opacity: 0.4;
+        opacity: .6;
         position: absolute;
         display: block;
         top: 0;
@@ -123,19 +124,8 @@ order: 500
         content: "";
         width: 100%;
         height: 40%;
-        background: -webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            from(#000000),
-            to(rgba(0, 0, 0, 0))
-        );
-        background: -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0) 100%);
-        background: linear-gradient(
-            to bottom,
-            #000000 0%,
-            rgba(0, 0, 0, 0) 100%
-        );
+       
+      
         position: absolute;
         display: block;
         top: 0;
@@ -150,6 +140,7 @@ order: 500
         width: 100%;
         /* Makes img tag act as a background image */
         object-fit: cover;
+        opacity: .5;
     }
 }
 /* Tablet - 768px */
@@ -170,7 +161,7 @@ order: 500
             #000000 0%,
             rgba(0, 0, 0, 0) 100%
         );
-        opacity: 1;
+        opacity: .8;
     }
 }
 
@@ -626,10 +617,10 @@ order: 500
     <!--Background Image-->
     <picture class="cs-background">
         <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people-laughing.jpg">
+        <source media="(max-width: 600px)" srcset="/assets/images/2.png">
         <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people-laughing.jpg">
-        <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people-laughing.jpg" alt="people laughing" width="1280" height="568" aria-hidden="true">
+        <source media="(min-width: 601px)" srcset="/assets/images/2.png">
+        <img decoding="async" src="/assets/images/2.png" alt="people laughing" width="1280" height="568" aria-hidden="true">
     </picture>
 </div>
                                 
@@ -653,7 +644,7 @@ order: 500
                     <div class="cs-flex-group">
                         <span class="cs-header">Phone</span>
                         <a href="tel:888-4565-789
-                        " class="cs-link">+1 (888) 4565 789
+                        " class="cs-link">{{client.phoneForTel}}
                         </a>
                     </div>
                 </li>
@@ -663,7 +654,7 @@ order: 500
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Email</span>
-                        <a href="mailto:Email@stitch.com" class="cs-link">Email@stitch.com</a>
+                        <a href="mailto:{{client.email}}" class="cs-link">{{client.email}}</a>
                     </div>
                 </li>
                 <li class="cs-li">
@@ -672,14 +663,14 @@ order: 500
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Address</span>
-                        <a href="" class="cs-link">2553 Woodbridge Lane, Boston Ware 120</a>
+                        <a href="" class="cs-link">Based in Detroit!</a>
                     </div>
                 </li>
             </ul>
         </div>
         <!--Form-->
         <form class="cs-form" id="cs-form-1403" name="Contact Form" method="post">
-            <h3 class="cs-h3">Make Appointment</h3>
+            <h3 class="cs-h3">Send us a message</h3>
             <label class="cs-label">
                 Name
                 <input class="cs-input" required type="text" id="name-1403" name="name" placeholder="Name">
